@@ -8,7 +8,7 @@
     <script src="https://kit.fontawesome.com/1b0f7c667a.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <section id="landingpage">
+    <section id="landing-page">
 
         <!-- nav -->
 
@@ -70,6 +70,55 @@
         <a href="#projects" class="scroll">
             <div class="scroll__icon click"></div>
         </a>
+        <div class="modal">
+            <div class="modal__half modal__about">
+                <h3 class="modal__title">heres a bit about me.</h3>
+                <h4 class="modal__sub__title modal__sub-title--about">Frontend software engineer</h4>
+                <p class="modal__para">i am 23 years old. i am currently learning <b class="orange">frontend software development</b>. i have found a interest in building <b>smooth running and clean websites</b>. 
+                    <br>currently i am taking <b class="orange">frontend simplified</b> which is full of a great team that have helped me undertsand anything from <b class="orange">html, css, and java script</b>. </br>
+                </p>
+                <div class="modal__languages">
+                    <figure class="modal__language">
+                        <img src="./assets/html5-brands-solid-full.svg" alt="" class="modal__language--img">
+                        <span class="language__name">HTML</span>
+                    </figure>
+                    <figure class="modal__language">
+                        <img src="./assets/css3-alt-brands-solid.png" alt="" class="modal__language--img">
+                        <span class="language__name">CSS</span>
+                    </figure>
+                    <figure class="modal__language">
+                        <img src="./assets/icons8-javascript-logo-50.png" alt="" class="modal__language--img">
+                        <span class="language__name">JavaScript</span>
+                    </figure>
+                </div>
+            </div>
+            <div class="modal__half modal__contact">
+                <h3 class="modal__title modal__title--contact">Let's have a chat!</h3>
+                <h4 class="modal__sub-title modal__title--contact">I'm currently lookng for new oppurtunites</h4>
+                <form id="contact__form" action="">
+                    <div class="form__item">
+                        <label class="form__item--label" >Name</label>
+                        <input class="input" name="user__name" type="text" required></input>
+                    </div>
+                    <div class="form__item">
+                        <label class="form__item--label" >Email</label>
+                        <input class="input" name="user__Email" type="Email" required></inout>
+                    </div>
+                    <div class="form__item">
+                        <label class="form__item--label" >message</label>
+                        <textarea class="input" name="message" type="text" required></textarea>
+                    </div>
+                    <button id="contact__submit" class="form__submit">Send it my way!</button>
+                </form>
+                <div class="modal__overlay modal__overlay--loading">
+                    <i class="fas fa-spinner"></i>
+                </div>
+                <div class="modal__overlay modal__overlay--success">
+                    Thanks for the messgae looking forward to speakng to you soon!
+                </div>
+            </div>
+            <i class="fas fa-times modal__exit click"></i>
+        </div>
     </section>
 
     <!-- projects -->
@@ -106,5 +155,32 @@
             </div>
         </div>
     </section>
+    <footer>
+        <div class="container">
+            <div class="row footer__row">
+                <figure>
+                    <img class="footer__logo--img" src="" alt="">
+                </figure>
+                <div class="footer__social--lists">
+                    <a href="#" class="footer__social--link
+                    link__hover-effect
+                    link__hover-effect--white">
+                    GitHub 
+                </a>
+                <a href="#" class="footer__social--link
+                link__hover-effect
+                link__hover-effect--white">
+                Email
+            </a>
+            <a href="#" class="footer__social--link
+            link__hover-effect
+            link__hover-effect--white">
+            Resume 
+        </a>
+    </div>
+    <div class="footer__copyright">copyright © 2026 Jeremiah Robbins</div>
+</div>
+</div>
+</footer>
 </body>
 </html>
