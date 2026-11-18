@@ -290,6 +290,8 @@ modal
     border-radius: 20px;
     overflow: hidden;
     display: flex;
+    visibility: hidden;
+    pointer-events: none;
 }
 
 .modal__half{
@@ -409,6 +411,7 @@ modal
     font-weight: 700;
     text-align: center;
     padding: 28px;
+    z-index: -1;
 }
 
 .fa-spinner{
@@ -433,6 +436,16 @@ modal
     font-size: 36px;
     z-index: 100;
 }
+
+.modal__open{
+    visibility: visible;
+    pointer-events: none;
+}
+
+.modal__overlay--visable{
+    z-index: 1;
+}
+
 /* 
 
 projects
